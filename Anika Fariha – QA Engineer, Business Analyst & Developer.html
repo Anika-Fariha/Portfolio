@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anika Fariha – QA Engineer, Business Analyst & Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Reenie+Beanie&family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7EDEA;--paper:#FFFBF8;--ink:#14213D;--muted:#5A5470;--burg:#7B1E3A;--gold:#A57B2C;
+  --rule:#E3D4E0;--margin:#E9A9B8;--plaid1:rgba(123,30,58,.78);--plaid2:rgba(20,33,61,.7);--plaidbase:#F0D9DD;
+  color-scheme:light;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0E1630;--paper:#17214A;--ink:#F3E9E4;--muted:#B9B3CF;--burg:#F09DB5;--gold:#D9B66A;
+  --rule:#2A3566;--margin:#8A3B58;--plaid1:rgba(240,157,181,.55);--plaid2:rgba(160,175,230,.4);--plaidbase:#1B2552;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1630;--paper:#17214A;--ink:#F3E9E4;--muted:#B9B3CF;--burg:#F09DB5;--gold:#D9B66A;--rule:#2A3566;--margin:#8A3B58;--plaid1:rgba(240,157,181,.55);--plaid2:rgba(160,175,230,.4);--plaidbase:#1B2552;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.65 "EB Garamond",Georgia,serif}
+a{color:var(--burg)}
+:focus-visible{outline:3px solid var(--burg);outline-offset:3px}
+.plaid{height:46px;background:
+  repeating-linear-gradient(0deg,var(--plaid1) 0 5px,transparent 5px 18px),
+  repeating-linear-gradient(90deg,var(--plaid2) 0 5px,transparent 5px 18px),var(--plaidbase)}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:26px;flex-wrap:wrap;padding:22px 0 0;font-style:italic;font-size:18px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--burg);text-decoration:underline}
+.hero{padding:44px 0 64px}
+.hand{font-family:"Reenie Beanie",cursive;font-size:30px;line-height:1.1;color:var(--burg)}
+h1{font:400 clamp(60px,18vw,176px)/1 "Reenie Beanie",cursive;letter-spacing:0;margin:0 0 6px;white-space:nowrap}
+.role{font-size:24px;font-style:italic;color:var(--muted);margin:0 0 30px}
+.blast{max-width:560px;background:var(--paper);border:1px solid var(--rule);border-left:6px solid var(--burg);padding:20px 24px;margin-bottom:26px}
+.blast .hand{margin-bottom:6px}
+.blast p{margin:0}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 22px;text-decoration:none;font-style:italic;font-size:18px;border:1.5px solid var(--burg);color:var(--burg)}
+.btn.main{background:var(--burg);color:var(--paper)}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+section{padding:56px 0 24px}
+h2{font:500 40px/1.1 "Bodoni Moda",serif;margin:0 0 4px}
+h2+.hand{margin:0 0 28px}
+h3{font:700 21px/1.3 "Bodoni Moda",serif;margin:0}
+.job,.edu{display:grid;grid-template-columns:170px 1fr;gap:4px 32px;margin-bottom:30px}
+.when{font-family:"Reenie Beanie",cursive;font-size:26px;line-height:1.2;color:var(--burg)}
+.org{margin:0 0 6px;font-style:italic;color:var(--muted)}
+ul{margin:8px 0 0;padding-left:20px}
+li{margin-bottom:4px}
+.group{margin-bottom:34px}
+.group>.hand{margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{display:flex;flex-direction:column;padding:16px 20px 16px 58px;background-color:var(--paper);border:1px solid var(--rule);
+  background-image:linear-gradient(90deg,transparent 42px,var(--margin) 42px 44px,transparent 44px),repeating-linear-gradient(transparent 0 27px,var(--rule) 27px 28px);
+  line-height:28px}
+.card h4{font:700 20px/28px "Bodoni Moda",serif;margin:0}
+.card p{margin:0;color:var(--muted);font-style:italic}
+.card .tools{margin:0;color:var(--gold);font-size:16.5px}
+.card ul{font-size:17.5px;flex:1;margin:0}
+.card li{margin:0}
+.card a{font-weight:600}
+.shelf{display:grid;grid-template-columns:200px 1fr;gap:6px 32px;margin:0 0 6px}
+.shelf dt{font:700 19px/1.5 "Bodoni Moda",serif}
+.shelf dd{margin:0 0 14px;display:flex;flex-wrap:wrap;gap:2px 22px}
+.shelf span::before{content:"✓ ";font-family:"Reenie Beanie",cursive;font-size:26px;color:var(--burg);line-height:1}
+.pull{margin:56px 0 0;padding:8px 0 8px 24px;border-left:3px solid var(--gold)}
+.pull p{font:italic 500 clamp(24px,4.5vw,36px)/1.3 "Bodoni Moda",serif;margin:0 0 6px}
+.pull cite{font-family:"Reenie Beanie",cursive;font-size:26px;color:var(--burg);font-style:normal}
+.barbie{--barbie:#e0218a;--hot:#ff2f9e;--bubble:#ffb3dc;--blush:#ffd9ee;--bink:#5a0f3b;--bmuted:#a8407a;position:relative;overflow:hidden;margin-top:56px;color:var(--bink);font-family:"Poppins",system-ui,sans-serif;font-size:16px;line-height:1.6;background:radial-gradient(circle at 20% 0%,#fff 0%,transparent 45%),linear-gradient(160deg,var(--blush) 0%,var(--bubble) 55%,#ff8fcb 100%)}
+.barbie::before,.barbie::after{content:"";position:absolute;inset:0;pointer-events:none}
+.barbie::before{background-image:radial-gradient(circle,#fff 0 2.5px,transparent 3.5px),radial-gradient(circle,#ffd45a 0 2px,transparent 3px),radial-gradient(circle,#ff2f9e 0 1.8px,transparent 2.8px);background-size:53px 61px,71px 67px,43px 47px;background-position:0 0,17px 23px,31px 9px;animation:bglitter 2.4s steps(2,end) infinite}
+.barbie::after{background-image:radial-gradient(circle,#fff 0 3px,transparent 4px),radial-gradient(circle,#c9a6ff 0 2px,transparent 3px);background-size:97px 83px,61px 59px;background-position:40px 30px,11px 7px;opacity:.9;animation:bglitter 3.1s steps(2,end) infinite reverse}
+.barbie-in{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:56px 22px 64px;text-align:center}
+.btag{display:inline-block;font-size:13px;font-weight:600;color:#fff;background:var(--barbie);padding:5px 18px;border-radius:999px;border:2px solid #fff;box-shadow:0 3px 0 rgba(160,20,100,.35)}
+.barbie h2{font:400 clamp(34px,7vw,60px)/1.2 "Pacifico",cursive;margin:18px 0 12px;color:var(--barbie);text-shadow:3px 3px 0 #fff,0 0 18px rgba(255,255,255,.9)}
+.bintro{font-size:18px;font-weight:600;color:var(--bmuted);margin:0 auto 36px;max-width:44ch}
+.bintro::before,.bintro::after{content:"\2726";color:var(--barbie);margin:0 10px}
+.bquotes{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));text-align:left}
+.barbie figure{position:relative;margin:0;background:#fff;border:3px solid var(--barbie);border-radius:22px;padding:28px 24px 20px;box-shadow:6px 6px 0 var(--hot);overflow:hidden}
+.barbie figure::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,var(--bubble) 0 1.2px,transparent 2.2px),radial-gradient(circle,#ffe3a0 0 1px,transparent 2px);background-size:29px 31px,41px 37px;background-position:5px 5px,20px 17px;opacity:.6;pointer-events:none}
+.barbie figure::after{content:"\2726";position:absolute;top:10px;right:16px;color:var(--barbie);font-size:20px;animation:btwinkle 3s ease-in-out infinite}
+.barbie figure:nth-child(2n)::after{animation-delay:-1s;color:#f2b632}
+.barbie figure:nth-child(3n)::after{animation-delay:-2s;color:var(--hot)}
+.barbie blockquote{position:relative;margin:0 0 14px;font:italic 500 21px/1.4 "Bodoni Moda",serif;color:var(--bink)}
+.barbie figcaption{position:relative;font-size:15px;font-weight:600;color:var(--barbie)}
+.barbie figcaption::before{content:"\2014\00a0"}
+.bcredit{margin:40px 0 0;font-size:14px;font-weight:600;color:var(--bmuted)}
+.bspark{position:absolute;z-index:2;pointer-events:none;width:var(--s);height:var(--s);left:var(--x);top:var(--y);background:var(--c);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);filter:drop-shadow(0 0 4px #fff);opacity:0;animation:bpop var(--d) ease-in-out var(--delay) infinite}
+@keyframes bglitter{0%{opacity:.45}50%{opacity:1}100%{opacity:.55}}
+@keyframes btwinkle{0%,100%{opacity:.3;transform:scale(.75) rotate(0deg)}50%{opacity:1;transform:scale(1.3) rotate(25deg)}}
+@keyframes bpop{0%,100%{opacity:0;transform:scale(.2) rotate(0deg)}50%{opacity:1;transform:scale(1) rotate(45deg)}}
+@media (prefers-reduced-motion:reduce){.barbie::before,.barbie::after,.barbie figure::after{animation:none}.bspark{animation:none;opacity:.8;transform:scale(.8)}}
+.barbie{background:none;color:var(--ink)}
+.barbie::before,.barbie::after{content:none}
+.barbie h2{text-shadow:none}
+.bintro,.bcredit{color:var(--muted)}
+.barbie figure{background:var(--paper)}
+.barbie blockquote{color:var(--ink)}
+.bspark{filter:none}
+footer{margin-top:56px}
+footer .wrap{padding-top:44px;padding-bottom:36px}
+footer p{margin:0 0 10px}
+.xo{font-family:"Reenie Beanie",cursive;font-size:34px;color:var(--burg)}
+@media (max-width:760px){
+  .job,.edu,.shelf{grid-template-columns:1fr}
+  .hero{padding-top:30px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="plaid" aria-hidden="true"></div>
+<div class="wrap">
+<nav aria-label="Sections">
+  <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero">
+  <div class="hand">hi, I’m</div>
+  <h1>Anika Fariha</h1>
+  <p class="role">QA engineer, business analyst & web developer, Dhaka</p>
+  <div class="blast">
+    <div class="hand">spotted:</div>
+    <p>A CSE graduate with a 3.82 CGPA, a very organized Postman collection and a talent for finding the bug right before launch. Recently seen at Banglalink, breaking things on purpose so your users don’t have to.</p>
+  </div>
+  <div class="cta">
+    <a class="btn main" href="mailto:anikafariha025@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/Anika-Fariha" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://anika-fariha.github.io/QA-Portfolio/" target="_blank" rel="noopener">QA portfolio</a>
+  </div>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="hand">where I’ve been working</div>
+  <div class="job">
+    <div class="when">Jan – Jun 2026</div>
+    <div>
+      <h3>Contractual Digitalyst Intern</h3>
+      <p class="org">Banglalink, Technology Team</p>
+      <ul>
+        <li>Optimized SQL queries for Banglalink’s Tier 1 applications.</li>
+        <li>Ran large-scale UAT and structured validation for fraud detection processes.</li>
+        <li>Carried out regression, smoke and sanity testing after deployments.</li>
+        <li>Integrated automated test scripts into CI/CD pipelines to streamline releases.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">2024 – 2025</div>
+    <div>
+      <h3>PHP Developer & QA Tester</h3>
+      <p class="org">RMIT BD</p>
+      <ul>
+        <li>Built web projects in WordPress and developed MVPs.</li>
+        <li>Delivered SEO-optimized websites and e-commerce solutions to boost online sales.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="job">
+    <div class="when">2024 – 2025</div>
+    <div>
+      <h3>Part-time Student Tutor, Algorithms</h3>
+      <p class="org">BRAC University</p>
+      <ul>
+        <li>Helped students with lab assignments and explained core concepts in one-on-one and group sessions.</li>
+        <li>Supported faculty in checking lab quizzes.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="hand">the receipts</div>
+  <div id="projectGroups"></div>
+</section>
+
+<blockquote class="pull"><p>“I live in two worlds. One is a world of books.”</p><cite>Rory Gilmore</cite></blockquote>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="hand">my reading list, all checked off</div>
+  <dl class="shelf">
+    <dt>Testing & QA</dt><dd><span>Manual testing</span><span>Automated testing</span><span>Test case design</span><span>Test planning</span><span>Jira</span><span>Browser DevTools</span></dd>
+    <dt>Automation</dt><dd><span>Selenium WebDriver</span><span>TestNG</span><span>Cypress</span><span>Postman</span></dd>
+    <dt>Languages</dt><dd><span>Python</span><span>C</span><span>TypeScript</span><span>HTML</span><span>CSS</span></dd>
+    <dt>Frameworks & tools</dt><dd><span>React</span><span>Spring Boot</span><span>Laravel</span><span>Keras</span><span>TensorFlow</span><span>Docker</span><span>Git</span></dd>
+    <dt>Databases</dt><dd><span>MongoDB</span><span>MySQL</span></dd>
+  </dl>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="hand">school days</div>
+  <div class="edu">
+    <div class="when">2022 – 2025</div>
+    <div><h3>BSc in Computer Science & Engineering</h3><p class="org">BRAC University, Dhaka. CGPA 3.82/4.00, 136 credits completed.</p></div>
+  </div>
+  <div class="edu">
+    <div class="when">2020 – 2021</div>
+    <div><h3>GCE Advanced Level</h3><p class="org">Oxford International School, Dhaka. 4 A*.</p></div>
+  </div>
+  <div class="edu">
+    <div class="when">2007 – 2019</div>
+    <div><h3>GCE Ordinary Level</h3><p class="org">Sunnydale, Dhaka. 7 A*.</p></div>
+  </div>
+  <div class="edu">
+    <div class="when">2022 – 2024</div>
+    <div><h3>Clubs & community</h3><p class="org">Microsoft Learn Student Ambassador (2023–2024), building a learning community around Microsoft technologies and attending Azure and GitHub workshops. General member of the BRAC University Computer Club (2022–2023), helping organize workshops with members and sponsors.</p></div>
+  </div>
+</section>
+</div>
+
+<aside class="barbie" aria-labelledby="bt">
+  <div class="barbie-in">
+    <span class="btag">Mood board</span>
+    <h2 id="bt">Four fictional women, one group project</h2>
+    <p class="bintro">Icons only. Every career needs a board of directors. Mine raised me through reruns.</p>
+    <div class="bquotes">
+      <figure><blockquote>“What? Like it’s hard?”</blockquote><figcaption>Elle Woods</figcaption></figure>
+      <figure><blockquote>“Who cares if I’m pretty if I fail my finals?”</blockquote><figcaption>Rory Gilmore</figcaption></figure>
+      <figure><blockquote>“A little nervous breakdown can really work wonders for a girl.”</blockquote><figcaption>Rory Gilmore</figcaption></figure>
+      <figure>
+        <!-- I kept this card to the short opening line. Paste the rest of Blair’s line here yourself if you want the full version. -->
+        <blockquote>“Destiny is for losers.”</blockquote><figcaption>Blair Waldorf</figcaption>
+      </figure>
+      <figure><blockquote>“Whoever said money doesn’t buy happiness didn’t know where to shop.”</blockquote><figcaption>Blair Waldorf</figcaption></figure>
+      <figure><blockquote>“People don’t tell you who you are, you tell them.”</blockquote><figcaption>Serena van der Woodsen</figcaption></figure>
+    </div>
+    <p class="bcredit">Inspired by Gilmore Girls, Legally Blonde, and Gossip Girl.</p>
+  </div>
+</aside>
+<script>
+(function(){
+  var box=document.querySelector(".barbie"),colors=["#ffd45a","#ff2f9e","#e0218a","#c9a6ff","#ffb3dc"];
+  for(var i=0;i<30;i++){
+    var el=document.createElement("span");el.className="bspark";
+    el.style.setProperty("--x",(Math.random()*96)+"%");
+    el.style.setProperty("--y",(Math.random()*96)+"%");
+    el.style.setProperty("--s",(10+Math.random()*18)+"px");
+    el.style.setProperty("--c",colors[i%colors.length]);
+    el.style.setProperty("--d",(1.8+Math.random()*2.4)+"s");
+    el.style.setProperty("--delay",(-Math.random()*4)+"s");
+    box.appendChild(el);
+  }
+})();
+</script>
+
+<footer id="contact">
+  <div class="plaid" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2>Say hello</h2>
+    <p>Dhaka, Bangladesh<br>
+    <a href="mailto:anikafariha025@gmail.com">anikafariha025@gmail.com</a><br>
+    <a href="tel:+8801315650671">+880 1315 650671</a></p>
+    <p><a href="https://github.com/Anika-Fariha" target="_blank" rel="noopener">GitHub</a> · <a href="https://anika-fariha.github.io/QA-Portfolio/" target="_blank" rel="noopener">QA portfolio</a></p>
+    <p><em>“You know you love me.” Gossip Girl</em></p>
+    <div class="xo">xoxo, Anika</div>
+  </div>
+</footer>
+
+<script>
+var LINKS = {
+  selenium:"https://github.com/Anika-Fariha/Selenium_POM_Auth",
+  cypress:"https://github.com/Anika-Fariha/Cypress-E2E-Tests",
+  manual:"https://github.com/Anika-Fariha/Manual-Testing",
+  api:"https://github.com/Anika-Fariha/Travelcom_API-Testing_Postman",
+  travelcom:"https://github.com/Anika-Fariha/TravelCom",
+  invoice:"https://github.com/Anika-Fariha/Invoice",
+  fitstudio:"https://github.com/nosh1325/Fitstudio-gym-management-system",
+  practicemart:"https://github.com/Anika-Fariha/PracticeMart",
+  thesis:"https://github.com/nosh1325/Classification-of-Alzheimer-s-and-dementia-subtypes-using-SNN"
+};
+var GROUPS = [
+  {title:"Testing & automation", items:[
+    {k:"selenium", t:"Selenium: automated web testing", d:"Test scripts that verify a web application.", c:"Selenium WebDriver, TestNG", b:["Reusable scripts for the authentication page.","Page object model for a maintainable test architecture.","TestNG reporting, with defects logged from results."]},
+    {k:"cypress", t:"Cypress: end-to-end automation", d:"End-to-end tests for a web application.", c:"Cypress, JavaScript", b:["Cypress scripts for test automation.","Integration tests of the frontend against backend APIs."]},
+    {k:"manual", t:"Manual testing: web app verification", d:"Functional testing against requirements.", c:"Jira, Browser DevTools", b:["Designed and executed test cases and scenarios.","Logged defects and verified fixes."]},
+    {k:"api", t:"API testing with Postman", d:"Reliability testing of the TravelCom backend.", c:"Postman", b:["Test cases for GET, POST, PUT and DELETE.","Response code validation and automated scripts.","Detailed API test reports."]}
+  ]},
+  {title:"Things I built", items:[
+    {k:"travelcom", t:"TravelCom: a travel community", d:"Travelers share experiences and manage trips.", c:"Laravel, MySQL, Heroku", b:["Authentication and a role-based admin panel.","Posts with image uploads, plus live chat.","Deployed on Heroku with JawsDB MySQL."]},
+    {k:"invoice", t:"Invoice: generate and manage invoices", d:"Create, edit and preview with real-time updates.", c:"Next.js, Tailwind CSS, Node.js", b:["Responsive, component-based UI.","Scalable Next.js page structure."]},
+    {k:"practicemart", t:"PracticeMart: e-commerce", d:"A full-stack online store.", c:"React, Express, MongoDB, Vercel", b:["Product pages, cart, registration and login.","REST API with Cloudinary image management.","Frontend deployed on Vercel."]},
+    {k:"fitstudio", t:"FitStudio: gym management", d:"A web platform for running a gym.", c:"PHP, MySQL, HTML, CSS", b:["Member profiles, workout plans, purchases and progress.","Automated inventory, notifications and BMI.","Secure admin and member access."]}
+  ]},
+  {title:"The thesis", items:[
+    {k:"thesis", t:"Alzheimer’s and dementia subtypes with spiking neural networks", d:"A brain-inspired model for multi-class MRI classification.", c:"PyTorch, SNNtorch, Scikit-learn", b:["Leaky Integrate-and-Fire neurons trained with reward-modulated STDP.","Trained on an MRI dataset from NINS Hospital, Dhaka.","Compared with CNN and ViT on accuracy, loss curves and confusion matrices."]}
+  ]}
+];
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+document.getElementById("projectGroups").innerHTML = GROUPS.map(function(g){
+  return '<div class="group"><div class="hand">'+esc(g.title)+'</div><div class="grid">'+g.items.map(function(p){
+    return '<article class="card"><h4>'+esc(p.t)+'</h4><p>'+esc(p.d)+'</p><p class="tools">'+esc(p.c)+'</p><ul>'+
+      p.b.map(function(b){return '<li>'+esc(b)+'</li>'}).join('')+'</ul><a href="'+LINKS[p.k]+'" target="_blank" rel="noopener">View on GitHub</a></article>';
+  }).join('')+'</div></div>';
+}).join('');
+</script>
+</body>
+</html>
